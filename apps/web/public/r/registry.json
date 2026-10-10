@@ -13,7 +13,7 @@
         {
           "path": "src/lib/utils.ts",
           "type": "registry:lib",
-          "target": "@/lib/utils.ts"
+          "target": "lib/utils.ts"
         }
       ]
     },
@@ -28,7 +28,7 @@
         {
           "path": "src/components/button.tsx",
           "type": "registry:ui",
-          "target": "@/components/ui/button.tsx"
+          "target": "components/ui/button.tsx"
         }
       ]
     },
@@ -42,7 +42,7 @@
         {
           "path": "src/components/card.tsx",
           "type": "registry:ui",
-          "target": "@/components/ui/card.tsx"
+          "target": "components/ui/card.tsx"
         }
       ]
     },
@@ -57,7 +57,7 @@
         {
           "path": "src/components/badge.tsx",
           "type": "registry:ui",
-          "target": "@/components/ui/badge.tsx"
+          "target": "components/ui/badge.tsx"
         }
       ]
     }

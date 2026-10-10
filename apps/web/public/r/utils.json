@@ -11,7 +11,7 @@
       "path": "src/lib/utils.ts",
       "content": "export { cn } from \"cn\"\n",
       "type": "registry:lib",
-      "target": "@/lib/utils.ts"
+      "target": "lib/utils.ts"
     }
   ],
   "type": "registry:lib"
