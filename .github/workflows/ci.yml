@@ -36,5 +36,8 @@ jobs:
       - name: Type-check
         run: pnpm typecheck
 
+      - name: Build UI registry
+        run: pnpm --filter @komikhq/ui registry:build
+
       - name: Build website
         run: pnpm --filter web build

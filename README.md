@@ -16,6 +16,26 @@ pnpm dev
 The website runs from `apps/web`. Shared shadcn UI components and theme tokens
 live in `packages/ui`.
 
+## UI registry prototype
+
+The first registry release includes `button`, `card`, and `badge`, plus the
+shared `utils` dependency. Build registry JSON into the website's Pages output:
+
+```bash
+pnpm --filter @komikhq/ui registry:build
+```
+
+After deployment, install an item in a shadcn project with:
+
+```bash
+pnpm dlx shadcn@latest add @komikhq/button
+```
+
+The registry URL is configured in `apps/web/components.json`. Components
+install into the consuming project's configured aliases, so its `components`
+and `utils` aliases must be set. This is an initial compatibility pilot, not
+yet the full component catalog.
+
 ## Checks
 
 ```bash

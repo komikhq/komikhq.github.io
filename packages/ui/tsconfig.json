@@ -9,6 +9,7 @@
     "strict": true,
     "noEmit": true,
     "paths": {
+      "@/*": ["./src/*"],
       "@komikhq/ui/*": ["./src/*"]
     }
   },

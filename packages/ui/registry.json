@@ -1,0 +1,65 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "komikhq",
+  "homepage": "https://github.com/komikhq/komikhq.github.io",
+  "items": [
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "KomikHQ Utilities",
+      "description": "Shared class name utilities used by KomikHQ UI components.",
+      "dependencies": ["cn"],
+      "files": [
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib",
+          "target": "@/lib/utils.ts"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "An accessible button with KomikHQ styles and variants.",
+      "dependencies": ["class-variance-authority", "radix-ui"],
+      "registryDependencies": ["@komikhq/utils"],
+      "files": [
+        {
+          "path": "src/components/button.tsx",
+          "type": "registry:ui",
+          "target": "@/components/ui/button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "A composable card surface with header, content, and footer primitives.",
+      "registryDependencies": ["@komikhq/utils"],
+      "files": [
+        {
+          "path": "src/components/card.tsx",
+          "type": "registry:ui",
+          "target": "@/components/ui/card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "A compact label with semantic and interactive variants.",
+      "dependencies": ["class-variance-authority", "radix-ui"],
+      "registryDependencies": ["@komikhq/utils"],
+      "files": [
+        {
+          "path": "src/components/badge.tsx",
+          "type": "registry:ui",
+          "target": "@/components/ui/badge.tsx"
+        }
+      ]
+    }
+  ]
+}

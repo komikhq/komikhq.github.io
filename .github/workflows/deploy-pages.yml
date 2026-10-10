@@ -37,6 +37,9 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Build UI registry
+        run: pnpm --filter @komikhq/ui registry:build
+
       - name: Build website
         run: pnpm --filter web build
 

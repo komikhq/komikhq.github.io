@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "utils",
+  "title": "KomikHQ Utilities",
+  "description": "Shared class name utilities used by KomikHQ UI components.",
+  "dependencies": [
+    "cn"
+  ],
+  "files": [
+    {
+      "path": "src/lib/utils.ts",
+      "content": "export { cn } from \"cn\"\n",
+      "type": "registry:lib",
+      "target": "@/lib/utils.ts"
+    }
+  ],
+  "type": "registry:lib"
+}
