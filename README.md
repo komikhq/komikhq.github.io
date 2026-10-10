@@ -18,7 +18,8 @@ live in `packages/ui`.
 
 ## UI registry prototype
 
-The registry includes all shared UI components and hooks from `packages/ui`.
+The registry includes all 61 shared UI components and the shared mobile hook
+from `packages/ui`.
 Components use the consuming project's existing `cn` helper at `@/lib/utils`,
 avoiding overwriting its standard shadcn utility file. Build registry JSON into
 the website's Pages output:

@@ -115,6 +115,18 @@ for (const [directory, registryType] of [
   }
 }
 
+const itemNames = new Set(items.map(({ name }) => name))
+for (const item of items) {
+  for (const dependency of item.registryDependencies ?? []) {
+    const dependencyName = dependency.replace(/^@komikhq\//, "")
+    if (!itemNames.has(dependencyName)) {
+      throw new Error(
+        `Registry item "${item.name}" references missing item "${dependency}".`
+      )
+    }
+  }
+}
+
 const duplicateNames = items
   .map(({ name }) => name)
   .filter((name, index, names) => names.indexOf(name) !== index)
