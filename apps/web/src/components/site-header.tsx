@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react"
 import { ArrowUpRight, GithubLogo } from "@phosphor-icons/react"
 import { Button } from "@komikhq/ui/components/button"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -9,8 +10,40 @@ const navigation = [
 ]
 
 export function SiteHeader() {
+  const [isVisible, setIsVisible] = useState(true)
+  const headerRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    let previousScrollY = window.scrollY
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      const scrollDifference = currentScrollY - previousScrollY
+
+      if (currentScrollY <= 80) {
+        setIsVisible(true)
+      } else if (
+        Math.abs(scrollDifference) > 4 &&
+        !headerRef.current?.contains(document.activeElement)
+      ) {
+        setIsVisible(scrollDifference < 0)
+      }
+
+      previousScrollY = currentScrollY
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   return (
-    <header className="sticky top-0 z-20 border-b border-border/70 bg-background/85 backdrop-blur-xl">
+    <header
+      className={`sticky top-0 z-20 border-b border-border/70 bg-background/85 backdrop-blur-xl transition-transform duration-300 motion-reduce:transition-none ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+      onFocus={() => setIsVisible(true)}
+      ref={headerRef}
+    >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:px-8">
         <a
           aria-label="KomikHQ home"
