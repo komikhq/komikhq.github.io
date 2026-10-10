@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "registry:build": "shadcn build registry.json --cwd . --output ../../apps/web/public/r",
+    "registry:build": "node ../../scripts/build-registry.mjs",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit"

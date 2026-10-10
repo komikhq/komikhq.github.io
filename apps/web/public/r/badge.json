@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "badge",
   "title": "Badge",
-  "description": "A compact label with semantic and interactive variants.",
+  "description": "KomikHQ UI component: badge.",
   "dependencies": [
     "class-variance-authority",
     "radix-ui"

@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "button",
   "title": "Button",
-  "description": "An accessible button with KomikHQ styles and variants.",
+  "description": "KomikHQ UI component: button.",
   "dependencies": [
     "class-variance-authority",
     "radix-ui"

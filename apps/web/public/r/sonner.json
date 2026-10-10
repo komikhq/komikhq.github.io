@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sonner",
+  "title": "Sonner",
+  "description": "KomikHQ UI component: sonner.",
+  "dependencies": [
+    "@phosphor-icons/react",
+    "next-themes",
+    "sonner"
+  ],
+  "files": [
+    {
+      "path": "src/components/sonner.tsx",
+      "content": "import { useTheme } from \"next-themes\"\nimport { Toaster as Sonner, type ToasterProps } from \"sonner\"\nimport { CheckCircleIcon, InfoIcon, WarningIcon, XCircleIcon, SpinnerIcon } from \"@phosphor-icons/react\"\n\nconst Toaster = ({ ...props }: ToasterProps) => {\n  const { theme = \"system\" } = useTheme()\n\n  return (\n    <Sonner\n      theme={theme as ToasterProps[\"theme\"]}\n      className=\"toaster group\"\n      icons={{\n        success: (\n          <CheckCircleIcon className=\"size-4\" />\n        ),\n        info: (\n          <InfoIcon className=\"size-4\" />\n        ),\n        warning: (\n          <WarningIcon className=\"size-4\" />\n        ),\n        error: (\n          <XCircleIcon className=\"size-4\" />\n        ),\n        loading: (\n          <SpinnerIcon className=\"size-4 animate-spin\" />\n        ),\n      }}\n      style={\n        {\n          \"--normal-bg\": \"var(--popover)\",\n          \"--normal-text\": \"var(--popover-foreground)\",\n          \"--normal-border\": \"var(--border)\",\n          \"--border-radius\": \"var(--radius)\",\n        } as React.CSSProperties\n      }\n      toastOptions={{\n        classNames: {\n          toast: \"cn-toast\",\n        },\n      }}\n      {...props}\n    />\n  )\n}\n\nexport { Toaster }\n",
+      "type": "registry:ui",
+      "target": "components/ui/sonner.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

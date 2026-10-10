@@ -18,10 +18,10 @@ live in `packages/ui`.
 
 ## UI registry prototype
 
-The first registry release includes `button`, `card`, and `badge`. Components
-use the consuming project's existing `cn` helper at `@/lib/utils`, avoiding
-overwriting its standard shadcn utility file. Build registry JSON into the
-website's Pages output:
+The registry includes all shared UI components and hooks from `packages/ui`.
+Components use the consuming project's existing `cn` helper at `@/lib/utils`,
+avoiding overwriting its standard shadcn utility file. Build registry JSON into
+the website's Pages output:
 
 ```bash
 pnpm --filter @komikhq/ui registry:build
@@ -33,10 +33,10 @@ After deployment, install an item in a shadcn project with:
 pnpm dlx shadcn@latest add @komikhq/button
 ```
 
-The registry URL is configured in `apps/web/components.json`. Components
-install into the consuming project's configured aliases, so its `components`
-and `utils` aliases must be set. This initial compatibility pilot is not yet
-the full component catalog.
+Install other components by replacing `button` with the item name from
+`packages/ui/registry.json`. The registry URL is configured in
+`apps/web/components.json`. A consuming project must have shadcn configured
+with `components` and `utils` aliases and the normal shadcn global stylesheet.
 
 ## Checks
 

@@ -4,11 +4,189 @@
   "homepage": "https://github.com/komikhq/komikhq.github.io",
   "items": [
     {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "KomikHQ UI component: accordion.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/accordion.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/accordion.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "KomikHQ UI component: alert-dialog.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@komikhq/button"
+      ],
+      "files": [
+        {
+          "path": "src/components/alert-dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/alert-dialog.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "KomikHQ UI component: alert.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "src/components/alert.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/alert.tsx"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "KomikHQ UI component: aspect-ratio.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/aspect-ratio.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/aspect-ratio.tsx"
+        }
+      ]
+    },
+    {
+      "name": "attachment",
+      "type": "registry:ui",
+      "title": "Attachment",
+      "description": "KomikHQ UI component: attachment.",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@komikhq/button"
+      ],
+      "files": [
+        {
+          "path": "src/components/attachment.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/attachment.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "KomikHQ UI component: avatar.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/avatar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/avatar.tsx"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "KomikHQ UI component: badge.",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/badge.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/badge.tsx"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "description": "KomikHQ UI component: breadcrumb.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/breadcrumb.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/breadcrumb.tsx"
+        }
+      ]
+    },
+    {
+      "name": "bubble",
+      "type": "registry:ui",
+      "title": "Bubble",
+      "description": "KomikHQ UI component: bubble.",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/bubble.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/bubble.tsx"
+        }
+      ]
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "title": "Button Group",
+      "description": "KomikHQ UI component: button-group.",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@komikhq/separator"
+      ],
+      "files": [
+        {
+          "path": "src/components/button-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/button-group.tsx"
+        }
+      ]
+    },
+    {
       "name": "button",
       "type": "registry:ui",
       "title": "Button",
-      "description": "An accessible button with KomikHQ styles and variants.",
-      "dependencies": ["class-variance-authority", "radix-ui"],
+      "description": "KomikHQ UI component: button.",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
       "files": [
         {
           "path": "src/components/button.tsx",
@@ -18,10 +196,30 @@
       ]
     },
     {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "KomikHQ UI component: calendar.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "react-day-picker"
+      ],
+      "registryDependencies": [
+        "@komikhq/button"
+      ],
+      "files": [
+        {
+          "path": "src/components/calendar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/calendar.tsx"
+        }
+      ]
+    },
+    {
       "name": "card",
       "type": "registry:ui",
       "title": "Card",
-      "description": "A composable card surface with header, content, and footer primitives.",
+      "description": "KomikHQ UI component: card.",
       "files": [
         {
           "path": "src/components/card.tsx",
@@ -31,16 +229,839 @@
       ]
     },
     {
-      "name": "badge",
+      "name": "carousel",
       "type": "registry:ui",
-      "title": "Badge",
-      "description": "A compact label with semantic and interactive variants.",
-      "dependencies": ["class-variance-authority", "radix-ui"],
+      "title": "Carousel",
+      "description": "KomikHQ UI component: carousel.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "embla-carousel-react"
+      ],
+      "registryDependencies": [
+        "@komikhq/button"
+      ],
       "files": [
         {
-          "path": "src/components/badge.tsx",
+          "path": "src/components/carousel.tsx",
           "type": "registry:ui",
-          "target": "components/ui/badge.tsx"
+          "target": "components/ui/carousel.tsx"
+        }
+      ]
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "title": "Chart",
+      "description": "KomikHQ UI component: chart.",
+      "dependencies": [
+        "recharts"
+      ],
+      "files": [
+        {
+          "path": "src/components/chart.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/chart.tsx"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "KomikHQ UI component: checkbox.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/checkbox.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/checkbox.tsx"
+        }
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "KomikHQ UI component: collapsible.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/collapsible.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/collapsible.tsx"
+        }
+      ]
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "description": "KomikHQ UI component: combobox.",
+      "dependencies": [
+        "@base-ui/react",
+        "@phosphor-icons/react"
+      ],
+      "registryDependencies": [
+        "@komikhq/button",
+        "@komikhq/input-group"
+      ],
+      "files": [
+        {
+          "path": "src/components/combobox.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/combobox.tsx"
+        }
+      ]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "Command",
+      "description": "KomikHQ UI component: command.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "cmdk"
+      ],
+      "registryDependencies": [
+        "@komikhq/dialog",
+        "@komikhq/input-group"
+      ],
+      "files": [
+        {
+          "path": "src/components/command.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/command.tsx"
+        }
+      ]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "KomikHQ UI component: context-menu.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/context-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/context-menu.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "KomikHQ UI component: dialog.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@komikhq/button"
+      ],
+      "files": [
+        {
+          "path": "src/components/dialog.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dialog.tsx"
+        }
+      ]
+    },
+    {
+      "name": "direction",
+      "type": "registry:ui",
+      "title": "Direction",
+      "description": "KomikHQ UI component: direction.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/direction.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/direction.tsx"
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "KomikHQ UI component: drawer.",
+      "dependencies": [
+        "vaul"
+      ],
+      "files": [
+        {
+          "path": "src/components/drawer.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/drawer.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "KomikHQ UI component: dropdown-menu.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/dropdown-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/dropdown-menu.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "title": "Empty",
+      "description": "KomikHQ UI component: empty.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "src/components/empty.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/empty.tsx"
+        }
+      ]
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "description": "KomikHQ UI component: field.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@komikhq/label",
+        "@komikhq/separator"
+      ],
+      "files": [
+        {
+          "path": "src/components/field.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/field.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "description": "KomikHQ UI component: hover-card.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/hover-card.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/hover-card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "input-group",
+      "type": "registry:ui",
+      "title": "Input Group",
+      "description": "KomikHQ UI component: input-group.",
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "@komikhq/button",
+        "@komikhq/input",
+        "@komikhq/textarea"
+      ],
+      "files": [
+        {
+          "path": "src/components/input-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input-group.tsx"
+        }
+      ]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input Otp",
+      "description": "KomikHQ UI component: input-otp.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "input-otp"
+      ],
+      "files": [
+        {
+          "path": "src/components/input-otp.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input-otp.tsx"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "KomikHQ UI component: input.",
+      "files": [
+        {
+          "path": "src/components/input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input.tsx"
+        }
+      ]
+    },
+    {
+      "name": "item",
+      "type": "registry:ui",
+      "title": "Item",
+      "description": "KomikHQ UI component: item.",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@komikhq/separator"
+      ],
+      "files": [
+        {
+          "path": "src/components/item.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/item.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kbd",
+      "type": "registry:ui",
+      "title": "Kbd",
+      "description": "KomikHQ UI component: kbd.",
+      "files": [
+        {
+          "path": "src/components/kbd.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/kbd.tsx"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "KomikHQ UI component: label.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/label.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/label.tsx"
+        }
+      ]
+    },
+    {
+      "name": "marker",
+      "type": "registry:ui",
+      "title": "Marker",
+      "description": "KomikHQ UI component: marker.",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/marker.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/marker.tsx"
+        }
+      ]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "title": "Menubar",
+      "description": "KomikHQ UI component: menubar.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/menubar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/menubar.tsx"
+        }
+      ]
+    },
+    {
+      "name": "message-scroller",
+      "type": "registry:ui",
+      "title": "Message Scroller",
+      "description": "KomikHQ UI component: message-scroller.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "@shadcn/react"
+      ],
+      "registryDependencies": [
+        "@komikhq/button"
+      ],
+      "files": [
+        {
+          "path": "src/components/message-scroller.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/message-scroller.tsx"
+        }
+      ]
+    },
+    {
+      "name": "message",
+      "type": "registry:ui",
+      "title": "Message",
+      "description": "KomikHQ UI component: message.",
+      "files": [
+        {
+          "path": "src/components/message.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/message.tsx"
+        }
+      ]
+    },
+    {
+      "name": "native-select",
+      "type": "registry:ui",
+      "title": "Native Select",
+      "description": "KomikHQ UI component: native-select.",
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
+      "files": [
+        {
+          "path": "src/components/native-select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/native-select.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "title": "Navigation Menu",
+      "description": "KomikHQ UI component: navigation-menu.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/navigation-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/navigation-menu.tsx"
+        }
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "KomikHQ UI component: pagination.",
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
+      "registryDependencies": [
+        "@komikhq/button"
+      ],
+      "files": [
+        {
+          "path": "src/components/pagination.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/pagination.tsx"
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "KomikHQ UI component: popover.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/popover.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/popover.tsx"
+        }
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "KomikHQ UI component: progress.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/progress.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/progress.tsx"
+        }
+      ]
+    },
+    {
+      "name": "questionnaire",
+      "type": "registry:ui",
+      "title": "Questionnaire",
+      "description": "KomikHQ UI component: questionnaire.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "@shadcn/react"
+      ],
+      "registryDependencies": [
+        "@komikhq/button"
+      ],
+      "files": [
+        {
+          "path": "src/components/questionnaire.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/questionnaire.tsx"
+        }
+      ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "KomikHQ UI component: radio-group.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/radio-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/radio-group.tsx"
+        }
+      ]
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "title": "Resizable",
+      "description": "KomikHQ UI component: resizable.",
+      "dependencies": [
+        "react-resizable-panels"
+      ],
+      "files": [
+        {
+          "path": "src/components/resizable.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/resizable.tsx"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "description": "KomikHQ UI component: scroll-area.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/scroll-area.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/scroll-area.tsx"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "KomikHQ UI component: select.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/select.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/select.tsx"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "KomikHQ UI component: separator.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/separator.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/separator.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "KomikHQ UI component: sheet.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@komikhq/button"
+      ],
+      "files": [
+        {
+          "path": "src/components/sheet.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/sheet.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "description": "KomikHQ UI component: sidebar.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@komikhq/button",
+        "@komikhq/input",
+        "@komikhq/separator",
+        "@komikhq/sheet",
+        "@komikhq/skeleton",
+        "@komikhq/tooltip",
+        "@komikhq/use-mobile"
+      ],
+      "files": [
+        {
+          "path": "src/components/sidebar.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/sidebar.tsx"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "KomikHQ UI component: skeleton.",
+      "files": [
+        {
+          "path": "src/components/skeleton.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/skeleton.tsx"
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "KomikHQ UI component: slider.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/slider.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/slider.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "Sonner",
+      "description": "KomikHQ UI component: sonner.",
+      "dependencies": [
+        "@phosphor-icons/react",
+        "next-themes",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "src/components/sonner.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/sonner.tsx"
+        }
+      ]
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "title": "Spinner",
+      "description": "KomikHQ UI component: spinner.",
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
+      "files": [
+        {
+          "path": "src/components/spinner.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/spinner.tsx"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "KomikHQ UI component: switch.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/switch.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/switch.tsx"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "KomikHQ UI component: table.",
+      "files": [
+        {
+          "path": "src/components/table.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/table.tsx"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "KomikHQ UI component: tabs.",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/tabs.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/tabs.tsx"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "KomikHQ UI component: textarea.",
+      "files": [
+        {
+          "path": "src/components/textarea.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/textarea.tsx"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle Group",
+      "description": "KomikHQ UI component: toggle-group.",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@komikhq/toggle"
+      ],
+      "files": [
+        {
+          "path": "src/components/toggle-group.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/toggle-group.tsx"
+        }
+      ]
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "description": "KomikHQ UI component: toggle.",
+      "dependencies": [
+        "class-variance-authority",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/toggle.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/toggle.tsx"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "KomikHQ UI component: tooltip.",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/components/tooltip.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/tooltip.tsx"
+        }
+      ]
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "title": "Use Mobile",
+      "description": "KomikHQ hook: use-mobile.",
+      "files": [
+        {
+          "path": "src/hooks/use-mobile.ts",
+          "type": "registry:hook",
+          "target": "hooks/use-mobile.ts"
         }
       ]
     }

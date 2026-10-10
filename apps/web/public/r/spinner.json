@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner",
+  "title": "Spinner",
+  "description": "KomikHQ UI component: spinner.",
+  "dependencies": [
+    "@phosphor-icons/react"
+  ],
+  "files": [
+    {
+      "path": "src/components/spinner.tsx",
+      "content": "import { cn } from \"@/lib/utils\"\nimport { SpinnerIcon } from \"@phosphor-icons/react\"\n\nfunction Spinner({ className, ...props }: React.ComponentProps<\"svg\">) {\n  return (\n    <SpinnerIcon data-slot=\"spinner\" role=\"status\" aria-label=\"Loading\" className={cn(\"size-4 animate-spin\", className)} {...props} />\n  )\n}\n\nexport { Spinner }\n",
+      "type": "registry:ui",
+      "target": "components/ui/spinner.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

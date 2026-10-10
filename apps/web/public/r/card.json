@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "card",
   "title": "Card",
-  "description": "A composable card surface with header, content, and footer primitives.",
+  "description": "KomikHQ UI component: card.",
   "files": [
     {
       "path": "src/components/card.tsx",

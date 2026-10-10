@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { Questionnaire as QuestionnairePrimitive } from "@shadcn/react/questionnaire"
-import { cn } from "cn"
+import { cn } from "@/lib/utils"
 
 import { buttonVariants, type Button } from "@komikhq/ui/components/button"
 import { CheckIcon } from "@phosphor-icons/react"
