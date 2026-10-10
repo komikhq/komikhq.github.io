@@ -4,7 +4,7 @@ import * as React from "react"
 import { cn } from "cn"
 import { Dialog as DialogPrimitive } from "radix-ui"
 
-import { Button } from "@workspace/ui/components/button"
+import { Button } from "@komikhq/ui/components/button"
 import { XIcon } from "@phosphor-icons/react"
 
 function Dialog({

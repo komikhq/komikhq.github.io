@@ -3,23 +3,23 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
 import { Slot } from "radix-ui"
 
-import { useIsMobile } from "@workspace/ui/hooks/use-mobile"
-import { Button } from "@workspace/ui/components/button"
-import { Input } from "@workspace/ui/components/input"
-import { Separator } from "@workspace/ui/components/separator"
+import { useIsMobile } from "@komikhq/ui/hooks/use-mobile"
+import { Button } from "@komikhq/ui/components/button"
+import { Input } from "@komikhq/ui/components/input"
+import { Separator } from "@komikhq/ui/components/separator"
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
-} from "@workspace/ui/components/sheet"
-import { Skeleton } from "@workspace/ui/components/skeleton"
+} from "@komikhq/ui/components/sheet"
+import { Skeleton } from "@komikhq/ui/components/skeleton"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@workspace/ui/components/tooltip"
+} from "@komikhq/ui/components/tooltip"
 import { SidebarIcon } from "@phosphor-icons/react"
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"

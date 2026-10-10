@@ -14,8 +14,8 @@
     "components": "@/components",
     "hooks": "@/hooks",
     "lib": "@/lib",
-    "utils": "@workspace/ui/lib/utils",
-    "ui": "@workspace/ui/components"
+    "utils": "@komikhq/ui/lib/utils",
+    "ui": "@komikhq/ui/components"
   },
   "rtl": false,
   "menuColor": "default",

@@ -4,7 +4,7 @@ import * as React from "react"
 import { Questionnaire as QuestionnairePrimitive } from "@shadcn/react/questionnaire"
 import { cn } from "cn"
 
-import { buttonVariants, type Button } from "@workspace/ui/components/button"
+import { buttonVariants, type Button } from "@komikhq/ui/components/button"
 import { CheckIcon } from "@phosphor-icons/react"
 
 function Questionnaire({

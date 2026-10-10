@@ -9,7 +9,7 @@
     "strict": true,
     "noEmit": true,
     "paths": {
-      "@workspace/ui/*": ["./src/*"]
+      "@komikhq/ui/*": ["./src/*"]
     }
   },
   "include": ["."],

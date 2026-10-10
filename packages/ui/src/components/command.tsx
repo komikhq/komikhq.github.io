@@ -8,11 +8,11 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@workspace/ui/components/dialog"
+} from "@komikhq/ui/components/dialog"
 import {
   InputGroup,
   InputGroupAddon,
-} from "@workspace/ui/components/input-group"
+} from "@komikhq/ui/components/input-group"
 import { MagnifyingGlassIcon, CheckIcon } from "@phosphor-icons/react"
 
 function Command({

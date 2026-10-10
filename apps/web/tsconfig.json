@@ -7,7 +7,7 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"],
-      "@workspace/ui/*": ["../../packages/ui/src/*"]
+      "@komikhq/ui/*": ["../../packages/ui/src/*"]
     }
   }
 }
