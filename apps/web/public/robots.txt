@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# Dynamic Sitemap Index (1-day Edge Cache)
-Sitemap: https://komikhq.com/sitemap.xml

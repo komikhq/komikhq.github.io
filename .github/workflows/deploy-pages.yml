@@ -35,6 +35,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Configure GitHub Pages
+        id: pages
         uses: actions/configure-pages@v5
 
       - name: Build UI registry
@@ -42,6 +43,8 @@ jobs:
 
       - name: Build website
         run: pnpm --filter web build
+        env:
+          VITE_SITE_URL: ${{ steps.pages.outputs.base_url }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

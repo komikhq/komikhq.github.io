@@ -42,7 +42,6 @@ async function getSourceFiles(directory) {
     .sort()
 }
 
-const sources = new Map()
 const items = []
 
 for (const [directory, registryType] of [
@@ -55,8 +54,6 @@ for (const [directory, registryType] of [
     const name = path.basename(filename, path.extname(filename))
     const sourcePath = `src/${directory}/${filename}`
     const source = await readFile(path.join(packageDirectory, sourcePath), "utf8")
-    sources.set(`${directory}/${name}`, source)
-
     const registryDependencies = new Set()
     const dependencies = new Set()
 
@@ -64,7 +61,7 @@ for (const [directory, registryType] of [
       const internalImport = specifier.match(internalImportPattern)
 
       if (internalImport) {
-        const [, internalDirectory, internalName] = internalImport
+        const [, , internalName] = internalImport
         registryDependencies.add(`@komikhq/${internalName}`)
         continue
       }

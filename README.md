@@ -52,7 +52,10 @@ pnpm --filter web build
 The `Deploy GitHub Pages` workflow builds `apps/web` and deploys its `dist`
 directory when changes are pushed to `main`, or when manually dispatched.
 Enable GitHub Pages with **GitHub Actions** as the build and deployment source
-in the repository settings.
+in the repository settings. Vite reads the Pages `base_url` during the build
+to generate `sitemap.xml`, `robots.txt`, canonical URLs, and social preview
+image URLs for the active GitHub Pages or custom domain. For a local production
+build, set `VITE_SITE_URL` to the site's absolute URL.
 
 ## KomikHQ links
 
