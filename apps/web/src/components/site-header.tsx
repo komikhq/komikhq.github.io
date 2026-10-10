@@ -20,12 +20,12 @@ export function SiteHeader() {
           <img
             alt="KomikHQ"
             className="h-7 w-auto dark:hidden"
-            src="/logo-wordmark-light.svg"
+            src="/logo-mark-light.svg"
             />
           <img
             alt="KomikHQ"
             className="hidden h-7 w-auto dark:block"
-            src="/logo-wordmark-dark.svg"
+            src="/logo-mark-dark.svg"
           />
         </a>
 

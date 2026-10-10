@@ -13,12 +13,12 @@ export function SiteFooter() {
           <img
             alt="KomikHQ"
             className="h-5 w-auto dark:hidden"
-            src="/logo-wordmark-light.svg"
+            src="/logo-mark-light.svg"
             />
           <img
             alt="KomikHQ"
             className="hidden h-5 w-auto dark:block"
-            src="/logo-wordmark-dark.svg"
+            src="/logo-mark-dark.svg"
           />
         </a>
         <Separator className="sm:hidden" />
