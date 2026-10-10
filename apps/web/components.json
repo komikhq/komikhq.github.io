@@ -21,6 +21,6 @@
   "menuColor": "default",
   "menuAccent": "bold",
   "registries": {
-    "@komikhq": "http://127.0.0.1:5173/r/{name}.json"
+    "@komikhq": "https://komikhq.github.io/r/{name}.json"
   }
 }
