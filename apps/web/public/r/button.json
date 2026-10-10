@@ -7,9 +7,6 @@
     "class-variance-authority",
     "radix-ui"
   ],
-  "registryDependencies": [
-    "@komikhq/utils"
-  ],
   "files": [
     {
       "path": "src/components/button.tsx",

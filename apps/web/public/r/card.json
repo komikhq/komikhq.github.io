@@ -3,9 +3,6 @@
   "name": "card",
   "title": "Card",
   "description": "A composable card surface with header, content, and footer primitives.",
-  "registryDependencies": [
-    "@komikhq/utils"
-  ],
   "files": [
     {
       "path": "src/components/card.tsx",
